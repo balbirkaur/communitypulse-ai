@@ -11,7 +11,7 @@ async def health_check(settings=Depends(get_settings)):
     """Health check endpoint."""
     return {
         "status": "healthy",
-        "project": "may2026-cohort2",
+        "project": "cohort2-hackathon",
         "region": settings.gcp_location,
         "bigquery": "connected",
         "vertex_ai": "ready",
